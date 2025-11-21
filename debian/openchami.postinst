@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+# Migration warning (same as RPM %pre)
+if [ -f /etc/containers/systemd/coresmd.container ]; then
+    echo "WARNING: /etc/containers/systemd/coresmd.container has been replaced by"
+    echo "         /etc/containers/systemd/coresmd-coredhcp.container."
+    echo "         Please migrate to avoid future issues."
+fi
+
+systemctl daemon-reload
+
+if systemctl is-active --quiet firewalld; then
+    systemctl stop firewalld || true
+fi
+
+/usr/libexec/openchami/bootstrap_openchami.sh

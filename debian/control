@@ -1,0 +1,17 @@
+Source: openchami
+Section: utils
+Priority: optional
+Maintainer: OpenCHAMI Team <info@openchami.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://openchami.org
+Vcs-Git: https://github.com/OpenCHAMI/release.git
+Vcs-Browser: https://github.com/OpenCHAMI/release
+
+Package: openchami
+Architecture: all
+Depends: podman, jq, curl, ${misc:Depends}
+Recommends: coreutils, openssl, hostname, sed
+Description: Open Composable Heterogeneous Adaptable Management Infrastructure
+ This package provides quadlet definitions, systemd units, configuration files,
+ and helper scripts to deploy OpenCHAMI services using Podman and systemd.

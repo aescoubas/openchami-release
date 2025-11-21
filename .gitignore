@@ -1,1 +1,9 @@
 openchami-*.noarch.rpm
+debian/openchami.debhelper*
+debian/debhelper*
+debian/openchami.substvars
+debian/openchami/
+debian/.debhelper*
+*.deb
+*.buildinfo
+*.changes

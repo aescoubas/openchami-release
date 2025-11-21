@@ -1,0 +1,5 @@
+openchami (0.9.0-1) unstable; urgency=medium
+
+  * Initial Debian release (converted from RPM spec)
+
+ -- OpenCHAMI Team <info@openchami.org>  Fri, 21 Nov 2025 12:00:00 -0700

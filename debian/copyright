@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: openchami
+Upstream-Contact: https://openchami.org
+Source: https://github.com/OpenCHAMI/... (or wherever your repo lives)
+
+Files: *
+Copyright: 2023-2025 OpenCHAMI Contributors
+License: MIT
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), ...
+ [full MIT text or just refer to /usr/share/common-licenses/MIT]
